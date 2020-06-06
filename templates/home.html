@@ -1,0 +1,10 @@
+<h2>Sign up Here</h2><hr>
+<form method='post' action="{{url_for('home')}}">
+        Name: <input type='text' name='name' required placeholder='Enter name'><br><br>
+        Email: <input type='email' name='email' required placeholder='Enter valid Email'><br><br>
+        Password: <input type='password' name='password', required placeholder='Enter strong password'><br><br>
+        <input type='submit' value='login'>
+</form>
+
+<a href="{{url_for('login')}}">Login</a>
+<p text-align='centre'>{{msg}}</p>
